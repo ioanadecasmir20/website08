@@ -9,6 +9,8 @@
   --radius:16px;
   --shadow:0 10px 30px rgba(2,6,23,.10);
 }
+
+/* Base */
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
@@ -19,9 +21,13 @@ body{
 }
 h1,h2,h3{font-family:"Playfair Display",serif;margin:.2em 0 .4em}
 p{margin:.5em 0 1em}
+a{color:var(--ink);text-decoration:none}
+a:hover{opacity:.9}
 
 /* Layout */
 .wrap{max-width:1200px;margin:auto;padding:0 20px}
+
+/* Header / Nav */
 header.top{
   position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);
   backdrop-filter:saturate(140%) blur(6px);border-bottom:1px solid var(--line)
@@ -31,28 +37,38 @@ header.top{
 .brand img{width:42px;height:42px;object-fit:contain;border-radius:10px}
 .brand b{font-size:20px;letter-spacing:.3px}
 .menu{display:flex;gap:22px;align-items:center}
-.menu a{text-decoration:none;color:var(--ink);font-weight:600}
+.menu a{font-weight:600}
 .menu a.active{color:var(--brand)}
 .btn{
   display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
   padding:.72rem 1rem;border-radius:12px;border:1px solid var(--line);
-  background:#fff;font-weight:700;cursor:pointer;text-decoration:none;color:var(--ink)
+  background:#fff;font-weight:700;cursor:pointer;color:var(--ink)
 }
 .btn.brand{background:var(--brand);border-color:var(--brand);color:#fff}
 .btn.ghost{background:transparent}
 
-/* Mobile nav (CSS only) */
-#navcheck{display:none}
+/* Mobile nav */
+.sheet{display:none;}                 /* hidden by default (desktop) */
+.navcheck{position:absolute;left:-9999px;} /* hide checkbox accessibly */
 .burger{display:none}
+
 @media (max-width:900px){
   .menu{display:none}
-  .burger{display:inline-grid;place-items:center;width:42px;height:42px;border:1px solid var(--line);border-radius:10px}
-  #navcheck:checked ~ .sheet{display:block}
-  .sheet{display:none;position:fixed;inset:74px 0 auto 0;background:#fff;border-top:1px solid var(--line);padding:16px}
-  .sheet a{display:block;padding:12px 6px;color:var(--ink);text-decoration:none;border-radius:8px}
+  .burger{
+    display:inline-grid;place-items:center;width:42px;height:42px;
+    border:1px solid var(--line);border-radius:10px;background:#fff;cursor:pointer
+  }
+  .sheet{
+    position:fixed;inset:74px 0 auto 0;background:#fff;border-top:1px solid var(--line);
+    padding:16px;box-shadow:0 10px 30px rgba(2,6,23,.12)
+  }
+  .sheet a{display:block;padding:12px 6px;border-radius:8px}
+  .sheet a:hover{background:#f3f6fa}
+  /* Toggle: checkbox must be directly before .sheet in the DOM */
+  #navcheck:checked + .sheet{display:block}
 }
 
-/* Hero / sections */
+/* Hero / Sections */
 .hero{
   padding:80px 0;background:
     radial-gradient(900px 400px at 90% -40%, rgba(22,163,74,.12), transparent 60%),
@@ -65,7 +81,7 @@ section.alt{background:var(--panel);border-top:1px solid var(--line);border-bott
 .h2{font-size:32px;margin:0 0 6px}
 .lead{color:var(--muted);margin:0 0 20px}
 
-/* Cards / grids */
+/* Cards / Grids */
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 @media (max-width:1000px){.grid{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:640px){.grid{grid-template-columns:1fr}}
@@ -79,5 +95,5 @@ section.alt{background:var(--panel);border-top:1px solid var(--line);border-bott
 /* Footer */
 footer{padding:40px 0;background:#0b1220;color:#e6edf7}
 .footer{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
-footer a{color:#9fd7b4;text-decoration:none}
+footer a{color:#9fd7b4}
 .small{font-size:13px;color:#c7d2e0}

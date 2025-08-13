@@ -4,55 +4,145 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact • Reliance Academy</title>
-  <meta name="description" content="Contact Reliance Academy for course dates, bookings and enquiries.">
+  <meta name="description" content="Contact Reliance Academy for course bookings and enquiries. Phone 01908 991723. Emails: info@reliance-academy.co.uk, support@reliance-academy.co.uk, enquiry@reliance-academy.co.uk, jobs@reliance-academy.co.uk">
   <link rel="icon" href="images/RAlogo1.png">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
+  <!-- LocalBusiness schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Reliance Academy",
+    "image": "https://yourdomain.tld/images/RAlogo1.png",
+    "telephone": "+44-1908-991723",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "63/66 Hatton Garden, Fifth Floor, Suite 23 Hatton Garden",
+      "addressLocality": "London",
+      "postalCode": "EC1N 8LE",
+      "addressCountry": "GB"
+    },
+    "openingHours": "Mo-Fr 09:00-17:00",
+    "url": "https://yourdomain.tld/contact",
+    "contactPoint": [
+      {"@type": "ContactPoint","contactType":"Customer Service","email":"info@reliance-academy.co.uk"},
+      {"@type": "ContactPoint","contactType":"Learner Support","email":"support@reliance-academy.co.uk"},
+      {"@type": "ContactPoint","contactType":"Enquiries","email":"enquiry@reliance-academy.co.uk"},
+      {"@type": "ContactPoint","contactType":"Recruitment","email":"jobs@reliance-academy.co.uk"}
+    ]
+  }
+  </script>
 </head>
 <body>
+
+  <!-- Header (as requested) -->
   <header class="top">
     <div class="wrap nav">
       <a class="brand" href="index.html">
         <img src="images/RAlogo1.png" alt="Reliance Academy logo"><b>Reliance Academy</b>
       </a>
       <nav class="menu" aria-label="Primary">
-        <a href="/" class="active">Overview</a>
+        <a href="/">Overview</a>
         <a href="courses">Courses</a>
-        <a href="contact">Contact</a>
+        <a href="contact" class="active" aria-current="page">Contact</a>
       </nav>
       <label for="navcheck" class="burger" aria-label="Open menu">☰</label>
     </div>
 
     <input type="checkbox" id="navcheck" class="navcheck" aria-hidden="true" />
-
     <div class="sheet" aria-label="Mobile menu">
-      <a href="/" class="active">Overview</a>
+      <a href="/">Overview</a>
       <a href="courses">Courses</a>
-      <a href="contact">Contact</a>
+      <a href="contact" class="active" aria-current="page">Contact</a>
     </div>
   </header>
 
   <main>
+    <!-- Intro -->
     <section class="hero">
       <div class="wrap">
         <h1>Contact us</h1>
-        <p class="lead">We’ll add your address, phone and email details here next.</p>
+        <p class="lead">We’re here Monday to Friday, 9am–5pm. For any enquiry, please send us an email using one of the addresses below.</p>
       </div>
     </section>
 
+    <!-- Contact cards -->
+    <section>
+      <div class="wrap grid">
+        <article class="card">
+          <h3>Call us</h3>
+          <p><a class="btn brand" href="tel:01908991723">01908 991723</a></p>
+          <p class="meta">Landline opening times: <strong>Mon–Fri, 9:00–17:00</strong></p>
+        </article>
+
+        <article class="card">
+          <h3>Email us (best)</h3>
+          <p><a href="mailto:info@reliance-academy.co.uk">info@reliance-academy.co.uk</a> <span class="meta">— general & bookings</span></p>
+          <p><a href="mailto:support@reliance-academy.co.uk">support@reliance-academy.co.uk</a> <span class="meta">— learner support</span></p>
+          <p><a href="mailto:enquiry@reliance-academy.co.uk">enquiry@reliance-academy.co.uk</a> <span class="meta">— group & corporate</span></p>
+          <p><a href="mailto:jobs@reliance-academy.co.uk">jobs@reliance-academy.co.uk</a> <span class="meta">— vacancies & trainers</span></p>
+          <p class="meta">For any enquiry, please email us and we’ll reply within one business day.</p>
+        </article>
+
+        <article class="card">
+          <h3>Visit us</h3>
+          <p>63/66 Hatton Garden, Fifth Floor, Suite 23 Hatton Garden,<br>London, England, EC1N 8LE</p>
+          <p><a class="btn" href="https://maps.google.com/?q=EC1N+8LE" target="_blank" rel="noopener">Open in Google Maps</a></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Hours + Map -->
+    <section class="alt">
+      <div class="wrap grid">
+        <article class="card">
+          <h3>Opening hours</h3>
+          <table>
+            <tbody>
+              <tr><td>Monday–Friday</td><td>09:00–17:00</td></tr>
+              <tr><td>Saturday–Sunday</td><td>Closed</td></tr>
+            </tbody>
+          </table>
+          <p class="meta">Course times may differ—see your confirmation email.</p>
+        </article>
+
+        <article class="card">
+          <h3>Find us</h3>
+          <div style="aspect-ratio:16/10;border-radius:12px;overflow:hidden;border:1px solid var(--line)">
+            <iframe
+              title="Map to Reliance Academy EC1N 8LE"
+              src="https://www.google.com/maps?q=EC1N%208LE&output=embed"
+              style="width:100%;height:100%;border:0"
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <p class="meta">Nearest stations: Farringdon / Chancery Lane. Step-free access on request.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Helpful links -->
     <section>
       <div class="wrap">
-        <h2 class="h2">Get in touch</h2>
-        <p>Prefer email? <a href="mailto:info@reliance-academy.co.uk">info@reliance-academy.co.uk</a></p>
+        <h2 class="h2">Helpful links</h2>
+        <ul>
+          <li><a href="courses">Course list & bookings</a></li>
+          <li><a href="terms.html">Booking terms, refunds & non-dispute policy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
       </div>
     </section>
   </main>
 
   <footer>
     <div class="wrap footer">
-      <div>© 2025 Reliance Academy Ltd</div>
-      <nav class="small"><a href="privacy">Privacy Policy</a> • <a href="terms">Terms &amp; Conditions</a></nav>
+      <div>© <span id="year">2025</span> Reliance Academy Ltd</div>
+      <nav class="small">
+        <a href="privacy">Privacy Policy</a> •
+        <a href="terms">Terms &amp; Conditions</a>
+      </nav>
     </div>
   </footer>
 </body>

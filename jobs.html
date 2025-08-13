@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jobs • Reliance Academy</title>
+  <meta name="description" content="Current vacancies at Reliance Academy with SOC codes, salaries and hours. Submit your CV now.">
+  <link rel="icon" href="../images/RAlogo1.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .filters{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0 16px}
+    .pill{border:1px solid var(--line);padding:.45rem .8rem;border-radius:999px;cursor:pointer;background:#fff}
+    .pill.active{background:var(--brand);border-color:var(--brand);color:#fff}
+    .search{width:100%;max-width:420px;border:1px solid var(--line);border-radius:12px;padding:.7rem .9rem}
+    .job-tags{display:flex;gap:8px;flex-wrap:wrap}
+    .tag{font-size:12px;padding:.25rem .5rem;border-radius:999px;background:#eef6f0;border:1px solid var(--line)}
+    .job-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+    .apply{white-space:nowrap}
+    .kv{display:grid;grid-template-columns:140px 1fr;gap:6px 12px;margin:.5rem 0 0}
+    .kv dt{color:#475569}
+    .kv dd{margin:0}
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="top">
+    <div class="wrap nav">
+      <a class="brand" href="/">
+        <img src="../images/RAlogo1.png" alt="Reliance Academy logo"><b>Reliance Academy</b>
+      </a>
+      <nav class="menu" aria-label="Primary">
+        <a href="/">Overview</a>
+        <a href="/courses">Courses</a>
+        <a href="/jobs" class="active" aria-current="page">Jobs</a>
+        <a href="/contact">Contact</a>
+      </nav>
+      <label for="navcheck" class="burger" aria-label="Open menu">☰</label>
+    </div>
+    <input type="checkbox" id="navcheck" class="navcheck" aria-hidden="true" />
+    <div class="sheet" aria-label="Mobile menu">
+      <a href="/">Overview</a>
+      <a href="/courses">Courses</a>
+      <a href="/jobs" class="active" aria-current="page">Jobs</a>
+      <a href="/contact">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap">
+        <h1>Join the team</h1>
+        <p class="lead">We’re hiring across Training, Quality and Customer Service. Filter roles, search by tag/SOC code, and submit your CV in one click.</p>
+        <p>
+          <a class="btn brand" href="mailto:jobs@reliance-academy.co.uk?subject=CV%20Submission%20-%20General%20Application&body=Hi%20Reliance%20Academy%2C%0D%0APlease%20find%20my%20CV%20attached.%0D%0AName%3A%0D%0APhone%3A%0D%0ARole%20interested%20in%3A%0D%0ANotice%20period%3A%0D%0ALocation%3A">
+            Submit your CV now
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Filters -->
+    <section>
+      <div class="wrap">
+        <div class="filters">
+          <button class="pill active" data-filter="all">All</button>
+          <button class="pill" data-filter="training">Training</button>
+          <button class="pill" data-filter="customer">Customer Service</button>
+          <button class="pill" data-filter="quality">Quality & Compliance</button>
+          <button class="pill" data-filter="leadership">Leadership</button>
+          <input class="search" id="jobSearch" type="search" placeholder="Search job titles, SOC, tags…" aria-label="Search jobs">
+        </div>
+
+        <div class="grid" id="jobGrid">
+          <!-- SIA Trainer -->
+          <article class="card job" data-tags="training sia security trainer physical intervention conflict management act awareness act security soc2319" data-code="SOC 2319">
+            <div class="job-head">
+              <div>
+                <h3>SIA Trainer (2 roles)</h3>
+                <div class="meta">Category: Training • SOC 2319</div>
+              </div>
+              <a class="btn brand apply" href="mailto:jobs@reliance-academy.co.uk?subject=Application%3A%20SIA%20Trainer%20(SOC%202319)&body=Hi%2C%20please%20find%20my%20CV%20attached.%0D%0AName%3A%0D%0APhone%3A%0D%0ANotice%20period%3A%0D%0ALocation%3A%0D%0AQualifications%20(teaching%2C%20L3%20CM%2C%20L2%20PI%2C%20SIA%20licence%2C%20ACT)%3A">
+                Submit your CV
+              </a>
+            </div>
+            <p>Deliver regulated Door Supervision and CCTV courses to diverse learner groups.</p>
+            <dl class="kv">
+              <dt>Hours</dt><dd>40 hours/week</dd>
+              <dt>Salary</dt><dd>£42,000</dd>
+              <dt>Requirements</dt>
+              <dd>Teaching qualification, valid SIA licence, Level 3 Conflict Management, Level 2 Physical Intervention, ACT Security & ACT Awareness.</dd>
+            </dl>
+            <div class="job-tags">
+              <span class="tag">Training</span><span class="tag">SIA</span><span class="tag">PI</span><span class="tag">CM</span><span class="tag">ACT</span>
+            </div>
+          </article>
+
+          <!-- First Aid Trainer -->
+          <article class="card job" data-tags="training first aid efa w faw trainer aed cpr soc2319" data-code="SOC 2319">
+            <div class="job-head">
+              <div>
+                <h3>First Aid Trainer (2 roles)</h3>
+                <div class="meta">Category: Training • SOC 2319</div>
+              </div>
+              <a class="btn brand apply" href="mailto:jobs@reliance-academy.co.uk?subject=Application%3A%20First%20Aid%20Trainer%20(SOC%202319)&body=Hi%2C%20please%20find%20my%20CV%20attached.%0D%0AName%3A%0D%0APhone%3A%0D%0ANotice%20period%3A%0D%0ALocation%3A%0D%0AQualifications%20(teaching%20%2B%20First%20Aid%20instructor%2Fcerts)%3A">
+                Submit your CV
+              </a>
+            </div>
+            <p>Deliver workplace first aid qualifications (EFAW/FAW) with scenario-based practical assessments.</p>
+            <dl class="kv">
+              <dt>Hours</dt><dd>37.5 hours/week</dd>
+              <dt>Salary</dt><dd>£41,800</dd>
+              <dt>Requirements</dt>
+              <dd>Teaching qualification and relevant First Aid certifications/instructor status.</dd>
+            </dl>
+            <div class="job-tags">
+              <span class="tag">Training</span><span class="tag">First Aid</span><span class="tag">EFAW</span><span class="tag">FAW</span>
+            </div>
+          </article>
+
+          <!-- Customer Service Manager -->
+          <article class="card job" data-tags="customer service manager bookings learner support crm leadership soc4143" data-code="SOC 4143">
+            <div class="job-head">
+              <div>
+                <h3>Customer Service Manager (1 role)</h3>
+                <div class="meta">Category: Customer Service • SOC 4143</div>
+              </div>
+              <a class="btn brand apply" href="mailto:jobs@reliance-academy.co.uk?subject=Application%3A%20Customer%20Service%20Manager%20(SOC%204143)&body=Hi%2C%20please%20find%20my%20CV%20attached.%0D%0AName%3A%0D%0APhone%3A%0D%0ANotice%20period%3A%0D%0ALeadership%20experience%3A">
+                Submit your CV
+              </a>
+            </div>
+            <p>Manage learner support services end-to-end: enquiries, bookings, confirmations, results and after-care.</p>
+            <dl class="kv">
+              <dt>Hours</dt><dd>40 hours/week</dd>
+              <dt>Salary</dt><dd>£43,000</dd>
+              <dt>Requirements</dt>
+              <dd>Leadership experience and excellent communication skills.</dd>
+            </dl>
+            <div class="job-tags">
+              <span class="tag">Customer Service</span><span class="tag">Leadership</span><span class="tag">Operations</span>
+            </div>
+          </article>
+
+          <!-- Internal Quality Assurer -->
+          <article class="card job" data-tags="quality iqa standardisation sampling awarding compliance soc2482" data-code="SOC 2482">
+            <div class="job-head">
+              <div>
+                <h3>Internal Quality Assurer (1 role)</h3>
+                <div class="meta">Category: Quality & Compliance • SOC 2482</div>
+              </div>
+              <a class="btn brand apply" href="mailto:jobs@reliance-academy.co.uk?subject=Application%3A%20Internal%20Quality%20Assurer%20(SOC%202482)&body=Hi%2C%20please%20find%20my%20CV%20attached.%0D%0AName%3A%0D%0APhone%3A%0D%0AIQA%20qualification%20%26%20experience%3A">
+                Submit your CV
+              </a>
+            </div>
+            <p>Ensure internal compliance and standardisation across programmes; support assessors and sampling strategy.</p>
+            <dl class="kv">
+              <dt>Hours</dt><dd>40 hours/week</dd>
+              <dt>Salary</dt><dd>£48,500</dd>
+              <dt>Requirements</dt>
+              <dd>IQA qualification and relevant experience.</dd>
+            </dl>
+            <div class="job-tags">
+              <span class="tag">Quality</span><span class="tag">IQA</span><span class="tag">Compliance</span>
+            </div>
+          </article>
+
+          <!-- Education Manager – Head of Centre / Quality Nominee -->
+          <article class="card job" data-tags="leadership head of centre quality nominee awarding compliance soc2322" data-code="SOC 2322">
+            <div class="job-head">
+              <div>
+                <h3>Education Manager – Head of Centre / Quality Nominee (1 role)</h3>
+                <div class="meta">Category: Leadership / Quality • SOC 2322</div>
+              </div>
+              <a class="btn brand apply" href="mailto:jobs@reliance-academy.co.uk?subject=Application%3A%20Education%20Manager%20%E2%80%93%20Head%20of%20Centre%20%2F%20Quality%20Nominee%20(SOC%202322)&body=Hi%2C%20please%20find%20my%20CV%20attached.%0D%0AName%3A%0D%0APhone%3A%0D%0ANotice%20period%3A%0D%0AAssessor%20%26%20IQA%20quals%3A%0D%0ARegulated%20training%20experience%3A">
+                Submit your CV
+              </a>
+            </div>
+            <p>Oversee centre operations, maintain awarding-body compliance, and lead on quality assurance across training programmes.</p>
+            <dl class="kv">
+              <dt>Hours</dt><dd>40 hours/week</dd>
+              <dt>Salary</dt><dd>£44,500</dd>
+              <dt>Requirements</dt>
+              <dd>Leadership experience, assessor and IQA qualifications, and knowledge of regulated training standards.</dd>
+            </dl>
+            <div class="job-tags">
+              <span class="tag">Leadership</span><span class="tag">Quality Nominee</span><span class="tag">Compliance</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="wrap">
+        <h2 class="h2">How to apply</h2>
+        <ol>
+          <li>Click <strong>Submit your CV</strong> on the relevant role (opens an email to <a href="mailto:jobs@reliance-academy.co.uk">jobs@reliance-academy.co.uk</a> with the correct subject line).</li>
+          <li>Attach your CV (PDF preferred) and any relevant certificates (teaching, First Aid, SIA, assessor/IQA, etc.).</li>
+          <li>Include notice period, preferred working pattern, and location/coverage.</li>
+        </ol>
+        <p class="meta">We review applications on a rolling basis and aim to respond within 5 working days.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer">
+      <div>© <span id="year">2025</span> Reliance Academy Ltd</div>
+      <nav class="small">
+        <a href="/privacy">Privacy Policy</a> •
+        <a href="/terms">Terms &amp; Conditions</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    // Filter & search
+    const pills = document.querySelectorAll('.pill');
+    const jobs  = document.querySelectorAll('.job');
+    const search = document.getElementById('jobSearch');
+
+    function applyFilters(){
+      const active = document.querySelector('.pill.active')?.dataset.filter || 'all';
+      const q = (search.value || '').toLowerCase().trim();
+      jobs.forEach(card=>{
+        const tags = (card.dataset.tags || '').toLowerCase();
+        const code = (card.dataset.code || '').toLowerCase();
+        const title = card.querySelector('h3').textContent.toLowerCase();
+        const inFilter = (active==='all') || tags.includes(active);
+        const inSearch = !q || [tags, code, title].some(t => t.includes(q));
+        card.style.display = (inFilter && inSearch) ? '' : 'none';
+      });
+    }
+    pills.forEach(p=>p.addEventListener('click', ()=>{
+      pills.forEach(x=>x.classList.remove('active'));
+      p.classList.add('active');
+      applyFilters();
+    }));
+    search.addEventListener('input', applyFilters);
+  </script>
+</body>
+</html>

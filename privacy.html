@@ -12,14 +12,23 @@
 <body>
   <header class="top">
     <div class="wrap nav">
-      <a class="brand" href="index.html"><img src="images/RAlogo1.png" alt=""><b>Reliance Academy</b></a>
-      <nav class="menu">
-        <a href="index.html">Overview</a>
+      <a class="brand" href="index.html">
+        <img src="images/RAlogo1.png" alt="Reliance Academy logo"><b>Reliance Academy</b>
+      </a>
+      <nav class="menu" aria-label="Primary">
+        <a href="index.html" class="active">Overview</a>
         <a href="courses.html">Courses</a>
         <a href="contact.html">Contact</a>
       </nav>
-      <label for="navcheck" class="burger">☰</label>
-      <input type="checkbox" id="navcheck">
+      <label for="navcheck" class="burger" aria-label="Open menu">☰</label>
+    </div>
+
+    <input type="checkbox" id="navcheck" class="navcheck" aria-hidden="true" />
+
+    <div class="sheet" aria-label="Mobile menu">
+      <a href="index.html" class="active">Overview</a>
+      <a href="courses.html">Courses</a>
+      <a href="contact.html">Contact</a>
     </div>
   </header>
 

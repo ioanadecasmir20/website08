@@ -4,21 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Courses • Reliance Academy</title>
-  <meta name="description" content="Book SIA Door Supervisor, Top-Up, First Aid and Level 1 Construction H&S.">
+  <meta name="description" content="Book SIA Door Supervisor, Top-Up, First Aid and Level 1 Construction Health & Safety courses. Pay securely via Stripe.">
   <link rel="icon" href="images/RAlogo1.png">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+  <!-- Header (as requested) -->
   <header class="top">
     <div class="wrap nav">
       <a class="brand" href="index.html">
         <img src="images/RAlogo1.png" alt="Reliance Academy logo"><b>Reliance Academy</b>
       </a>
       <nav class="menu" aria-label="Primary">
-        <a href="/" class="active">Overview</a>
-        <a href="courses">Courses</a>
+        <a href="/">Overview</a>
+        <a href="courses" class="active" aria-current="page">Courses</a>
         <a href="contact">Contact</a>
       </nav>
       <label for="navcheck" class="burger" aria-label="Open menu">☰</label>
@@ -27,8 +29,8 @@
     <input type="checkbox" id="navcheck" class="navcheck" aria-hidden="true" />
 
     <div class="sheet" aria-label="Mobile menu">
-      <a href="/" class="active">Overview</a>
-      <a href="courses">Courses</a>
+      <a href="/">Overview</a>
+      <a href="courses" class="active" aria-current="page">Courses</a>
       <a href="contact">Contact</a>
     </div>
   </header>
@@ -37,7 +39,7 @@
     <section class="hero">
       <div class="wrap">
         <h1>Courses</h1>
-        <p class="lead">Choose a course and we’ll add your Stripe payment buttons next.</p>
+        <p class="lead">Choose your course and book securely with Stripe. After booking, you’ll receive joining instructions by email.</p>
       </div>
     </section>
 
@@ -46,56 +48,104 @@
         <!-- L2 Door Supervisor -->
         <article class="card">
           <img src="images/course-ds.jpg" alt="Door Supervisor course">
-          <h3>Level 2 Door Supervisor</h3>
-          <p>Legal responsibilities, venue safety, conflict management, and safe physical intervention. First Aid on Day 1.</p>
-          <p class="meta">Classroom • Typical duration: 6 days</p>
-          <a class="btn brand" href="#" aria-disabled="true">Book (Stripe link coming)</a>
+          <h3>Level 2 Award for Door Supervisors</h3>
+          <p>Frontline security training covering legal responsibilities, venue safety, conflict management and safe physical intervention.</p>
+          <div class="meta">Classroom • Typical duration: 6 days • SIA-linked</div>
+          <details>
+            <summary>What’s covered</summary>
+            <ul>
+              <li>Working in the Private Security Industry, CT awareness, search & reporting</li>
+              <li>Conflict management & protecting vulnerable people</li>
+              <li>Physical intervention: safe positioning, escorting & disengagement</li>
+            </ul>
+            <p><strong>Entry:</strong> Valid First Aid (min. EFAW) required on Day 1; photo ID; sufficient English.</p>
+            <p><strong>Assessment:</strong> MCQ exams + supervised practicals. <strong>Outcome:</strong> Level 2 Award enabling SIA licence application.</p>
+          </details>
+          <p><a class="btn brand" href="https://book.stripe.com/aFa00l65p1tWeX4e9oeQM00" target="_blank" rel="noopener">Book now</a></p>
         </article>
 
         <!-- DS Top-Up -->
         <article class="card">
           <img src="images/course-topup.jpg" alt="Door Supervisor top-up">
           <h3>Level 2 Door Supervisor Refresher (Top-Up)</h3>
-          <p>Update on law, CT awareness, vulnerability, searching &amp; practical PI for licence renewal.</p>
-          <p class="meta">Classroom • 2 days</p>
-          <a class="btn brand" href="#" aria-disabled="true">Book (Stripe link coming)</a>
+          <p>SIA-mandated update for renewing licences: law updates, ACT awareness, vulnerability, searching and PI refresh.</p>
+          <div class="meta">Classroom • 2 days • Licence renewal</div>
+          <details>
+            <summary>What’s covered</summary>
+            <ul>
+              <li>Latest legislation & responsibilities</li>
+              <li>Counter-terrorism (ACT), first aid recap, incident reporting</li>
+              <li>Practical physical intervention refresh and safety</li>
+            </ul>
+            <p><strong>Entry:</strong> Current/eligible DS licence; valid First Aid on Day 1; photo ID.</p>
+            <p><strong>Assessment:</strong> MCQs + practical PI. <strong>Outcome:</strong> Certified top-up for licence renewal.</p>
+          </details>
+          <p><a class="btn brand" href="https://book.stripe.com/9B6eVf0L5c8AdT04yOeQM01" target="_blank" rel="noopener">Book now</a></p>
         </article>
 
         <!-- L3 EFAW -->
         <article class="card">
-          <img src="images/course-efaw.jpg" alt="EFAW first aid">
-          <h3>Level 3 Emergency First Aid at Work</h3>
-          <p>1-day hands-on course: primary survey, CPR &amp; AED, choking, bleeding, shock, burns.</p>
-          <p class="meta">Classroom • 1 day</p>
-          <a class="btn brand" href="#" aria-disabled="true">Book (Stripe link coming)</a>
+          <img src="images/course-efaw.jpg" alt="Emergency First Aid at Work">
+          <h3>Level 3 Emergency First Aid at Work (EFAW)</h3>
+          <p>One-day, hands-on course for appointed first aiders. Primary survey, recovery position, CPR & AED, choking, bleeding, shock and burns.</p>
+          <div class="meta">Classroom • 1 day • Certificate valid 3 years</div>
+          <details>
+            <summary>More info</summary>
+            <p><strong>Assessment:</strong> Practical scenarios + short knowledge check. <strong>Outcome:</strong> Level 3 EFAW certificate (HSE-recognised for low-risk workplaces).</p>
+          </details>
+          <p><a class="btn brand" href="https://book.stripe.com/5kQ4gB65pdcE7uC3uKeQM03" target="_blank" rel="noopener">Book now</a></p>
         </article>
 
         <!-- L3 FAW -->
         <article class="card">
-          <img src="images/course-faw.jpg" alt="FAW first aid">
-          <h3>Level 3 First Aid at Work</h3>
-          <p>Comprehensive 3-day qualification for higher-risk workplaces; includes medical emergencies.</p>
-          <p class="meta">Classroom • 3 days</p>
-          <a class="btn brand" href="#" aria-disabled="true">Book (Stripe link coming)</a>
+          <img src="images/course-faw.jpg" alt="First Aid at Work">
+          <h3>Level 3 First Aid at Work (FAW)</h3>
+          <p>Comprehensive training for higher-risk workplaces: incident management, CPR & AED, choking, bleeding & shock, fractures, burns/eye injuries, key medical emergencies.</p>
+          <div class="meta">Classroom • 3 days • Certificate valid 3 years</div>
+          <details>
+            <summary>More info</summary>
+            <p><strong>Assessment:</strong> Practical scenarios + short written test. <strong>Outcome:</strong> Level 3 FAW certificate (requalification every 3 years).</p>
+          </details>
+          <p><a class="btn brand" href="https://book.stripe.com/aFa5kF8dxegI2ai2qGeQM02" target="_blank" rel="noopener">Book now</a></p>
         </article>
 
-        <!-- L1 H&S -->
+        <!-- L1 H&S in Construction -->
         <article class="card">
-          <img src="images/course-hs.jpg" alt="Construction health & safety">
+          <img src="images/course-hs.jpg" alt="Construction Health and Safety">
           <h3>Level 1 Health &amp; Safety in a Construction Environment</h3>
-          <p>Entry course for the CSCS Green Labourer Card. Hazards, PPE, manual handling, working at height.</p>
-          <p class="meta">Classroom • 1 day</p>
-          <a class="btn brand" href="#" aria-disabled="true">Book (Stripe link coming)</a>
+          <p>Entry-level qualification covering hazards, PPE, manual handling, working at height, fire/electrical safety and incident reporting—your route to the CSCS Green Labourer Card.</p>
+          <div class="meta">Classroom • 1 day • CSCS route</div>
+          <details>
+            <summary>More info</summary>
+            <p><strong>Assessment:</strong> Multiple-choice test. <strong>Next step:</strong> Pass the CITB HS&amp;E test to apply for the CSCS Green Card.</p>
+          </details>
+          <p><a class="btn brand" href="https://book.stripe.com/9B6dRbgK34G85mu7L0eQM04" target="_blank" rel="noopener">Book now</a></p>
         </article>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="wrap">
+        <h2 class="h2">Good to know</h2>
+        <ul>
+          <li><strong>Confirmation:</strong> You’ll receive venue, timings and what to bring after booking.</li>
+          <li><strong>First Aid for SIA:</strong> DS and DS Top-Up require a valid First Aid certificate on Day 1 (EFAW or higher).</li>
+          <li><strong>Accessibility:</strong> Tell us about any learning or access needs—we’ll make reasonable adjustments.</li>
+        </ul>
+        <p class="meta">By booking you agree to our <a href="terms.html">Terms &amp; Conditions</a> (incl. booking & non-dispute policy) and <a href="privacy.html">Privacy Policy</a>.</p>
       </div>
     </section>
   </main>
 
   <footer>
     <div class="wrap footer">
-      <div>© 2025 Reliance Academy Ltd</div>
-      <nav class="small"><a href="privacy">Privacy Policy</a> • <a href="terms">Terms &amp; Conditions</a></nav>
+      <div>© <span id="year">2025</span> Reliance Academy Ltd</div>
+      <nav class="small">
+        <a href="privacy.html">Privacy Policy</a> •
+        <a href="terms.html">Terms &amp; Conditions</a>
+      </nav>
     </div>
   </footer>
+
 </body>
 </html>
